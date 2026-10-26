@@ -1,0 +1,372 @@
+/* Index Page */
+
+.hero-head {
+    width: 1600px;
+    height: 160px;
+    margin: auto;
+    padding: 10px 40px;
+    display: flex;
+    align-items: end;
+    letter-spacing: 4px;
+    font-size: 25px;
+}
+
+.hero-container {
+    display: grid;
+    max-height: 330px;
+    max-width: 1600px;
+    padding-right: 40px;
+    margin: auto;
+    gap: 10px;
+    grid-template-columns: 70% 15% 15%;
+    grid-template-rows: 230px 100px;
+}
+
+.hero1 {
+    text-transform: uppercase;
+    font-size: 105px;
+    line-height: 1;
+    padding-left: 40px;
+    grid-row: span 2;
+}
+
+.hero2 {
+    font-size: 23px;
+    grid-column: span 2;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.hero3 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: white;
+    background-color: #202922;
+    height: 75px;
+    width: 230px;
+}
+
+.hero4 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    background-color: #dfdede;
+    border-bottom: #b9b9b9;
+    border-style: solid;
+    height: 75px;
+    width: 200px;
+}
+
+.statistic-container {
+    display: grid;
+    max-width: 1600px;
+    height: 180px;
+    margin: auto;
+    padding: 50px 40px;
+    background-color: #dfdede;
+    text-transform: uppercase;
+    border-top: 2px solid #b9b9b9;
+    border-bottom: 3px solid #b9b9b9;
+    grid-template-columns: 420px 420px 420px 260px;
+}
+
+.statistic-container h1 {
+    font-weight: 900;
+    font-style: italic;
+    line-height: 1;
+    font-size: 44px
+}
+
+.statistic-container p {
+    font-size: 20px;
+}
+
+
+
+.s2 {
+    text-align: center;
+    height: 70px;
+    align-items: center;
+    border-left: 1px solid black;
+}
+
+.s2 h1 {
+    padding-right: 100px;
+}
+
+.s3 {
+    text-align: center;
+    border-left: 1px solid black;
+}
+
+.s3 h1 {
+    padding-right: 100px;
+}
+
+.s4 {
+    text-align: end;
+    border-left: 1px solid black;
+}
+
+.s4 h1 {
+    padding-right: 66px;
+}
+
+/* Cover Articles*/
+.article-container {
+    display: grid;
+    max-width: 1600px;
+    max-height: 1000px;
+    margin: auto;
+    gap: 0px 40px;
+    grid-template-columns: 700px 400px 400px;
+    grid-template-rows: 500px 500px;
+}
+
+.wrapper {
+    display: grid;
+    margin: 40px;
+    width: 700px;
+    grid-row: span 2;
+}
+
+.img {
+    display: flex;
+    grid-area: 1/1;
+}
+
+.img-text {
+    width: 100%;
+    color: white;
+    grid-area: 1/1;
+
+}
+
+.methodology {
+    margin: 40px;
+    width: 780px;
+    height: 455px%;
+    background-color: #d8d8d8;
+    grid-column: span 2;
+}
+
+.secondary-articles {
+    display: flex;
+    gap: 40px;
+    margin: 0px 40px;
+    width: 780px;
+    height: 460px;
+
+}
+
+.art1 {
+    padding: 40px;
+    height: 465px;
+    width: 370px;
+    border-right: 1px solid black;
+}
+
+.art2 {
+    height: 465px;
+    width: 370px;
+    background-color: #202922;
+}
+
+/* Contact Page- form group*/
+.contact-box {
+    display: grid;
+    max-width: 1600px;
+    margin: auto;
+    padding: 20px 40px;
+    grid-template-columns: 800px 800px
+}
+
+.contact {
+    padding: 40px;
+    height: 800px;
+    width: 800px;
+    background-color: #d3d0d0;
+    border: 1px solid;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.35rem;
+    padding: 1rem;
+    margin: 20px 0;
+    border: 1px solid #202922;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 180px;
+    gap: 0.35rem;
+    padding: 1rem;
+    margin: 20px 0;
+    border: 1px solid #202922;
+}
+
+input[type=submit] {
+    width: 60%;
+    height: 80px;
+    margin: 20px 20%;
+    background-color: #202922;
+    color: white;
+    padding: 1rem 2.5rem;
+    cursor: pointer;
+
+}
+
+input[type=submit]:hover {
+    scale: 102%;
+    transition-duration: 0.1s;
+    box-shadow: 4px 4px 10px #20292279;
+    transition-timing-function: ease-in-out;
+}
+
+
+
+
+/* Contact Page - address information*/
+.address-box {
+    display: flex;
+    flex-direction: column;
+    width: 670px;
+    margin: 0 50px;
+}
+
+.geo-node {
+    display: flex;
+    position: relative;
+    font-weight: bold;
+    padding-top: 8px;
+    font-size: 10px;
+}
+
+.geo-node::before {
+    content: '';
+    height: 5px;
+    display: flex;
+    padding: 0 25px;
+    margin: 5px;
+    position: relative;
+    top: 1%;
+    right: 5px;
+    background-color: #202922;
+}
+
+.location {
+    display: flex;
+    padding-top: 10px;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.address {
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+.map {
+    padding-top: 20px;
+}
+
+.direct-reach {
+    display: flex;
+    position: relative;
+    font-weight: bold;
+    padding-top: 40px;
+    right: 5px;
+    font-size: 10px;
+}
+
+.direct-reach::before {
+    content: '';
+    height: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 2px 25px;
+    margin: 5px;
+    background-color: #202922;
+}
+
+.email {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+    padding: 5px 0px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.tel {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+    padding: 5px 0px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.presence {
+    display: flex;
+    position: relative;
+    font-weight: bold;
+    padding-top: 40px;
+    right: 5px;
+    font-size: 10px;
+}
+
+.presence::before {
+    content: '';
+    height: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 2px 25px;
+    margin: 5px;
+    background-color: #202922;
+}
+
+.socials {
+    display: flex;
+    padding: 26px 0px;
+    gap: 40px;
+}
+
+.insta {
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+    font-weight: bold;
+    border: 3px solid black;
+    padding: 10px 20px;
+}
+
+.linkd {
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+    font-weight: bold;
+    border: 3px solid black;
+    padding: 10px 20px;
+}
+
+.git {
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+    font-weight: bold;
+    border: 3px solid black;
+    padding: 10px 20px;
+}
