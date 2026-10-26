@@ -20,13 +20,18 @@
 <body>
 
   <!--Navigation Header-->
-  <nav class="flex justify-between max-w-[1600px] m-auto p-[20px] px-[40px] border-b-4">
-    <div class="flex  font-bold text-brand-gold uppercase text-xl
-                hover:scale-102 hover:text-charcoal
+  <nav class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1fr_1fr_1fr]
+              items-center gap-4 max-w-[1600px] m-auto p-[20px] px-[40px] border-b-4">
+
+    <div class="flex justify-self-center md:justify-self-start font-bold text-brand-gold uppercase text-xl
+                hover:scale-102 hover:text-charcoal 
                 transition delay-50 duration-100 ease-in-out">
       <a href="Index.html"> Student_Portfolio_V1</a>
     </div>
-    <div>
+
+    <div class="row-start-2 justify-self-center
+                md:col-span-2
+                lg:row-start-1 lg:col-start-2 lg:col-span-1">
       <ul class="flex gap-[40px] uppercase text-charcoal ">
         <li class="hover:font-bold hover:border-b-1 hover:scale-110
                    transition delay-50 duration-100 ease-in-out"><a href="Index.html">Home</a></li>
@@ -36,7 +41,8 @@
                    transition delay-50 duration-100 ease-in-out"><a href="Contact.html">Contact</a></li>
       </ul>
     </div>
-    <div class="flex">
+
+    <div class="flex justify-self-center md:justify-self-end lg:col-start-3">
       <i class="fa-solid fa-magnifying-glass px-[20px] mr-4 mt-2
                 hover:scale-120 
                 transition delay-50 duration-100 ease-in-out"></i>
@@ -156,11 +162,13 @@
 
 
   <!-- Footer Bar-->
-  <footer class="h-20  m-auto py-[50px] flex justify-between items-center bg-brand-gold border-t-4">
+  <footer class=" max-w-[1600px] m-auto flex flex-col justify-between items-center bg-brand-gold border-t-4
+                    md:flex-row md:h-20 md:py-[50px]">
     <div class="flex m-[40px] text-charcoal">
       <h1 class="text-xs font-semibold uppercase"> &copy; 2024 architectural_systems. All rights reserved.</h1>
     </div>
-    <div class="m-[40px] text-xs uppercase text-charcoal font-semibold">
+    <div class=" text-xs uppercase text-charcoal font-semibold mb-[40px]
+                  md:m-[40px] ">
       <ul class="flex gap-8">
         <li class="underline hover:text-white"><a href="#">Linkedin</a></li>
         <li class="underline hover:text-white"><a href="#">github</a></li>

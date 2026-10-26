@@ -19,13 +19,18 @@
 <body>
 
   <!--Navigation Header-->
-  <nav class="flex justify-between max-w-[1600px] m-auto p-[20px] px-[40px] border-b-4">
-    <div class="flex  font-bold text-brand-gold uppercase text-xl
-                hover:scale-102 hover:text-charcoal
+  <nav class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1fr_1fr_1fr]
+              items-center gap-4 max-w-[1600px] m-auto p-[20px] px-[40px] border-b-4">
+
+    <div class="flex justify-self-center md:justify-self-start font-bold text-brand-gold uppercase text-xl
+                hover:scale-102 hover:text-charcoal 
                 transition delay-50 duration-100 ease-in-out">
       <a href="Index.html"> Student_Portfolio_V1</a>
     </div>
-    <div>
+
+    <div class="row-start-2 justify-self-center
+                md:col-span-2
+                lg:row-start-1 lg:col-start-2 lg:col-span-1">
       <ul class="flex gap-[40px] uppercase text-charcoal ">
         <li class="hover:font-bold hover:border-b-1 hover:scale-110
                    transition delay-50 duration-100 ease-in-out"><a href="Index.html">Home</a></li>
@@ -35,7 +40,8 @@
                    transition delay-50 duration-100 ease-in-out"><a href="Contact.html">Contact</a></li>
       </ul>
     </div>
-    <div class="flex">
+
+    <div class="flex justify-self-center md:justify-self-end lg:col-start-3">
       <i class="fa-solid fa-magnifying-glass px-[20px] mr-4 mt-2
                 hover:scale-120 
                 transition delay-50 duration-100 ease-in-out"></i>
@@ -48,25 +54,30 @@
   </nav>
 
   <!--Body Content Head-->
-  <div class="h-90 max-w-[1600px] m-auto">
+  <div class="h-auto max-w-[1600px] m-auto">
     <div class="m-[40px] border-l-5">
       <div class="mx-[40px] ">
-        <h1 class="text-[60px]/22 font-black ">SELECTED_WORKS</h1>
-        <p class="pt-4 uppercase text-[20px] ">An archival collection of academic and personal projects focusing on <BR>
+        <h1 class="text-[60px]/22 font-black hidden md:inline">SELECTED_WORKS</h1>
+        <div class="md:hidden">
+          <h1 class="text-[60px]/22 font-black ">SELECTED_</h1>
+          <h1 class="text-[60px]/10 pb-4 font-black ">WORKS</h1>
+        </div>
+        <p class="pt-4 uppercase text-[20px] ">An archival collection of academic and personal projects focusing on <BR
+            class="hidden lg:inline">
           structural integrity, computational design, and interactive systems. <br>
           2022 - 2024.
         </p>
       </div>
     </div>
 
-    <div class="grid lg:grid-cols-3 w-[1520px] h-300 m-[40px] 
+    <div class="grid lg:grid-cols-3 max-w-[1520px] m-[40px]
                 md:grid-cols-2 
                 sm:grid-cols-1">
 
       <!--Item 1-->
       <div class="group hover:bg-charcoal">
-        <div class="border-1 h-150">
-          <div class="m-[40px]">
+        <div class="border-1  h-full flex flex-col flex-1">
+          <div class="m-[40px] flex flex-col flex-1">
             <div class="border-1 h-60 flex text-center justify-center items-center"> Image placeholder_01</div>
             <div class="flex text-center items-center justify-between pt-[40px] pb-4">
               <div class="uppercase font-bold text-xl group-hover:text-brand-gold">Project Title</div>
@@ -75,14 +86,14 @@
             <p class="text-xl group-hover:text-mist-300">Exploration of generative patterns using modular arithmetic.
               Focus on visual weight and balance
               within a constrained 8px grid system.</p>
-            <p class="pt-[40px] uppercase group-hover:text-mist-300">#systems #Typography</p>
+            <p class="mt-auto pt-[40px] uppercase group-hover:text-mist-300">#systems #Typography</p>
           </div>
         </div>
       </div>
 
       <!--Item 2-->
       <div class="group hover:bg-charcoal">
-        <div class="border-1 h-150">
+        <div class="border-1 h-full flex flex-col flex-1">
           <div class="m-[40px]">
             <div class="border-1 h-60 flex text-center justify-center items-center"> Image placeholder_02</div>
             <div class="flex items-center justify-between pt-[40px] pb-4">
@@ -94,15 +105,15 @@
               inversion through standard CSS utility classes.
               Hover over this card to view the visual transformation.
             </p>
-            <p class="pt-[40px] uppercase group-hover:text-mist-300">#interactive #Motion</p>
+            <p class="mt-auto pt-[40px] uppercase group-hover:text-mist-300">#interactive #Motion</p>
           </div>
         </div>
       </div>
 
       <!--Item 3-->
       <div class="group hover:bg-charcoal">
-        <div class="border-1 h-150">
-          <div class="m-[40px]">
+        <div class="border-1 h-full flex flex-col">
+          <div class="m-[40px] flex flex-col flex-1">
             <div class="border-1 h-60 flex text-center justify-center items-center"> Image placeholder_03</div>
             <div class="flex text-center items-center justify-between pt-[40px] pb-4">
               <div class="uppercase font-bold text-xl group-hover:text-brand-gold">Project Title</div>
@@ -111,15 +122,15 @@
             <p class="text-xl group-hover:text-mist-300">Multi-dimensional data visualization for urban traffic flow.
               Utilizing dark-gray scalar values to represent density and frequency.
             </p>
-            <p class="pt-[40px] uppercase group-hover:text-mist-300">#data_viz #Algorithmic</p>
+            <p class="mt-auto pt-[40px] uppercase group-hover:text-mist-300">#data_viz #Algorithmic</p>
           </div>
         </div>
       </div>
 
       <!--Item 4-->
       <div class="group hover:bg-charcoal">
-        <div class="border-1 h-150">
-          <div class="m-[40px]">
+        <div class="border-1 h-full flex flex-col">
+          <div class="m-[40px] flex flex-col flex-1">
             <div class="border-1 h-60 flex text-center justify-center items-center"> Image placeholder_04</div>
             <div class="flex text-center items-center justify-between pt-[40px] pb-4">
               <div class="uppercase font-bold text-xl group-hover:text-brand-gold">Project Title</div>
@@ -128,15 +139,15 @@
             <p class="text-xl group-hover:text-mist-300">Design study of brutalist architecture translated into digital
               interface components. Emphasis on raw material feel and high contrast.
             </p>
-            <p class="pt-[40px] uppercase group-hover:text-mist-300">#brutalism #UI_Design</p>
+            <p class="mt-auto pt-[40px] uppercase group-hover:text-mist-300">#brutalism #UI_Design</p>
           </div>
         </div>
       </div>
 
       <!--Item 5-->
       <div class="group hover:bg-charcoal">
-        <div class="border-1 h-150">
-          <div class="m-[40px]">
+        <div class="border-1 h-full flex flex-col">
+          <div class="m-[40px] flex flex-col flex-1">
             <div class="border-1 h-60 flex text-center justify-center items-center"> Image placeholder_05</div>
             <div class="flex text-center items-center justify-between pt-[40px] pb-4">
               <div class="uppercase font-bold text-xl group-hover:text-brand-gold">Project Title</div>
@@ -144,15 +155,15 @@
             </div>
             <p class="text-xl group-hover:text-mist-300">Responsive system framework for educational platforms.
               Prioritizing information hierarchy and accessible data nodes.</p>
-            <p class="pt-[40px] uppercase group-hover:text-mist-300">#framework #UX_research</p>
+            <p class="mt-auto pt-[40px] uppercase group-hover:text-mist-300">#framework #UX_research</p>
           </div>
         </div>
       </div>
 
       <!--Item 6-->
       <div class="group hover:bg-charcoal">
-        <div class="border-1 h-150">
-          <div class="m-[40px]">
+        <div class="border-1 h-full flex flex-col">
+          <div class="m-[40px] flex flex-col flex-1">
             <div class="border-1 h-60 flex text-center justify-center items-center"> Image placeholder_06</div>
             <div class="flex text-center items-center justify-between pt-[40px] pb-4">
               <div class="uppercase font-bold text-xl group-hover:text-brand-gold">Project Title</div>
@@ -161,21 +172,23 @@
             <p class="text-xl group-hover:text-mist-300">Experimental log of 100 days of layout experiments.
               Documentation of grid-breaking patterns and asymmetrical balance.
             </p>
-            <p class="pt-[40px] uppercase group-hover:text-mist-300">#layout #experimental</p>
+            <p class="mt-auto pt-[40px] uppercase group-hover:text-mist-300">#layout #experimental</p>
           </div>
         </div>
       </div>
 
     </div>
 
-    <div class="h-90 max-w-[1600px] m-auto">
-      <div class="grid grid-cols-2 p-[40px]">
-        <div class="flex justify-between border-t-1 pt-10 font-bold uppercase">
+    <div class="max-h-90 max-w-[1600px] p-auto m-auto">
+      <div class="grid grid-cols-1 grid-rows-2 p-[40px]
+                  md:grid-rows-1 md:grid-cols-[1fr_1fr_auto]">
+        <div class="flex justify-between border-t-1 pt-10 gap-6 font-bold uppercase">
           <div>Archive_section_end</div>
           <div>Viewing_page_01_of_04</div>
         </div>
 
-        <div class="col- flex justify-center content-end p-5 w-[300px] ml-117 text-xl border-1 font-bold uppercase cursor-pointer
+        <div class="flex justify-center items-center px-5 py-auto mt-4 mx-auto h-[65px] w-[243px] text-xl border-1 font-bold uppercase cursor-pointer
+                  md:h-auto md:w-[300px] md:ml-auto md:mt-0 md:col-start-3
                   hover:bg-charcoal hover:text-brand-gold hover:drop-shadow-md 
                   transition delay-50 duration-100 ease-in-out">
           Load_Next_Entries</div>
@@ -184,11 +197,13 @@
 
 
     <!-- Footer Bar-->
-    <footer class="h-20 max-w-[1600px] m-auto py-[50px] flex justify-between items-center bg-brand-gold border-t-4">
+    <footer class=" max-w-[1600px] m-auto flex flex-col justify-between items-center bg-brand-gold border-t-4
+                    md:flex-row md:h-20 md:py-[50px]">
       <div class="flex m-[40px] text-charcoal">
         <h1 class="text-xs font-semibold uppercase"> &copy; 2024 architectural_systems. All rights reserved.</h1>
       </div>
-      <div class="m-[40px] text-xs uppercase text-charcoal font-semibold">
+      <div class=" text-xs uppercase text-charcoal font-semibold mb-[40px]
+                  md:m-[40px] ">
         <ul class="flex gap-8">
           <li class="underline hover:text-white"><a href="#">Linkedin</a></li>
           <li class="underline hover:text-white"><a href="#">github</a></li>

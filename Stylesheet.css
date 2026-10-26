@@ -179,13 +179,151 @@
     background-color: #202922;
 }
 
+/* Current Projects*/
+
+.current-projects-container {
+    max-width: 1600px;
+    margin: auto;
+    height: auto;
+}
+
+.title-bar {
+    display: flex;
+    text-transform: uppercase;
+    justify-content: space-between;
+    border-bottom: 3px solid;
+}
+
+.title-bar h1 {
+    display: flex;
+    font-weight: bolder;
+    font-size: 2.5rem;
+    padding-bottom: 15px;
+}
+
+.title-bar h2 {
+    letter-spacing: 2px;
+}
+
+.sort-date {
+    display: flex;
+    align-items: end;
+    line-height: 30px;
+    padding-top: 19px;
+    flex-direction: column;
+}
+
+/* Projects*/
+
+.projects {
+    max-width: 1600px;
+    text-transform: uppercase;
+}
+
+.projects h1 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.projects h2 {
+    font-weight: bold;
+}
+
+.projects h3 {
+    font-size: 18px;
+}
+
+.projects h4 {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+table {
+    margin: 50px 0;
+    ;
+}
+
+td {
+    padding: 40px;
+}
+
+@media (max-width:650px) {
+    table {
+        width: 100%
+    }
+
+    td {
+        display: none;
+    }
+
+    td {
+        display: block;
+    }
+
+    tr:nth-of-type(2n) {
+        background-color: #f3f4f6;
+    }
+}
+
+.stay-updated {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1600px;
+    margin: auto;
+    height: 600px;
+    text-transform: uppercase;
+    background-color: black;
+    color: #f3f4f6
+}
+
+.stay-updated h1 {
+    font-weight: bolder;
+}
+
+.update-form {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    gap: 20px;
+    border-bottom: 1px solid white;
+}
+
+.front-form {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    max-width: 1600px;
+    padding: 2px;
+    margin: 20px 10px;
+}
+
+.update-links {
+    display: flex;
+    gap: 40px;
+    letter-spacing: 4px;
+}
+
 /* Contact Page- form group*/
 .contact-box {
     display: grid;
     max-width: 1600px;
     margin: auto;
     padding: 20px 40px;
-    grid-template-columns: 800px 800px
+    grid-template-columns: 1fr 1fr
+}
+
+@media 1289px {
+
+    .contact-box {
+        display: grid;
+        max-width: 1600px;
+        margin: auto;
+        padding: 20px 40px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr
+    }
 }
 
 .contact {
